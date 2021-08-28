@@ -8,8 +8,8 @@ app.use('/scripts', express.static(__dirname+"/node_modules/web3.js-browser/buil
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-server.listen(3000, () => {
-    console.log(`Mini Game App listening at http://localhost:${3000}`)
+server.listen(process.env.PORT || 5000, () => {
+    console.log(`Mini Game App listening at http://localhost:${5000}`)
 })
 
 var bodyParser = require('body-parser');
