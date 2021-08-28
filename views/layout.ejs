@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="http://localhost:3000" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/web3.js" ></script>
+    <script src="./process.js" ></script>
+</head>
+<body>
+    <h2>Mini Game</h2>
+    <div
+        style="margin: 10px;"
+    >
+        <button id="btnConnectWallet"> Connect Wallet </button>
+        <button id="btnDisconnectWallet" style="display: none;"> Logout </button>
+        <p id="txtAddress"></p>
+    </div>
+    <div id='frmSignIn'>
+        <input id='txtName' type="text" placeholder="Name" /> 
+        <input id='txtEmail' type="text" placeholder="Email" /> 
+        <input id='txtPhone' type="text" placeholder="Phone" />
+        <button id="btnSignIn"> Sign In </button>
+    </div>
+    <div
+        id="lits-tracsaction"
+        style="background-color: bisque; padding: 10px;"
+    >
+        <table id="td-transaction" style="width: 90%;">
+            <tr id="line1" style="text-align: center; padding: 4px; border-bottom: solid 1px red;">
+                <td> Address </td>
+                <td> _ID </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
